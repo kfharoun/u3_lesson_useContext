@@ -410,7 +410,7 @@ export default function Component D() {
         onClick={() =>
           setUserInfo({
             ...userInfo,
-            favMovie: "Big Lebowski"
+            favMovie: "Big Lebowski",
             name: "Mr Taubman"
           })
         }
