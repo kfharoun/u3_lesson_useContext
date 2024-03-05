@@ -1,5 +1,5 @@
 import { useContext } from "react";
-//import  DataContext  from "./DataContext";
+//import  DataContext  from "../DataContext";
 
 export default function ComponentD() {
   const { userInfo, setUserInfo } = useContext(DataContext);
