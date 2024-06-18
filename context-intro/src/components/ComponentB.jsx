@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
-//import  DataContext from "../DataContext";
+import  DataContext from "./DataContext";
 import ComponentD from './ComponentD'
 
 
 export default function ComponentB() {
-//   const { userInfo, setUserInfo } = useContext(DataContext);
+  const { userInfo, setUserInfo } = useContext(DataContext);
   return (
     <div className="card">
       <h2>This is Component B</h2>
@@ -14,16 +14,18 @@ export default function ComponentB() {
         <li>Parent of ComponentD</li>
         <li>Uncle/Aunt of ComponentC</li>
       </ul>
-      {/* <p>
+      <p>
         <p>{userInfo.name}'s favorite color is </p>
-        <p style={{ color: userInfo.favColor }}>{userInfo.favColor}</p>
+        <p style={{ color: userInfo.favColor, fontWeight:"900" }}>{userInfo.favColor}</p>
+        <p>and her favorite movie is {userInfo.favMovie}</p>
       </p>
       
       <button
         onClick={() =>
           setUserInfo({
             ...userInfo,
-            favColor: "orange"
+            favColor: "orange",
+            favMovie: "The Love Witch"
           })
         }
       >
@@ -34,7 +36,8 @@ export default function ComponentB() {
         onClick={() =>
           setUserInfo({
             ...userInfo,
-            favColor: "pink"
+            favColor: "pink",
+            favMovie: "Barbie"
           })
         }
       >
@@ -43,7 +46,7 @@ export default function ComponentB() {
 
       <div>
         <ComponentD/>
-      </div> */}
+      </div>
     </div>
   )
     }
